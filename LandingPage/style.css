@@ -37,7 +37,7 @@ section{
 
 aside{
     position: relative;
-    left: 85%;
+    left: 90%;
     padding: 10px 20px;
     width: fit-content;
 }
@@ -56,5 +56,6 @@ footer{
     padding: 20px 0;
     margin-bottom: 10px;
 }
+
 
 
