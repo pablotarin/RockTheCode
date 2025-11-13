@@ -169,3 +169,131 @@ nav > div {
         font-size: 14px;
     }
 }
+
+.cardsSection{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    padding: 30px 40px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px 30px;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.cardTitles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.cardTitles > h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cardTitles > h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 20px 20px 0;
+}
+
+.moreInfo{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 45px;
+    padding: 12px 23px;
+    background-color: white;
+    border: 0;
+}
+
+.cardButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.colorButtons{
+    display: flex;
+    gap: 15px;
+}
+
+.colorButtons button{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.select{
+    box-shadow: 0px 0px 1px 2px black;
+}
+
+.btnBlack{
+    background-color: black;
+}
+
+.btnPurple{
+    background: rgb(81, 95, 145);
+}
+
+.btnSoftRed{
+    background: rgb(174, 63, 63);
+}
+
+.btnGray{
+    background: rgba(197, 197, 197, 1);
+}
+
+.btnRed{
+    background: rgba(161, 0, 0, 1);
+}
+
+.btnBlue{
+    background: rgba(0, 16, 161, 1);
+}
+
+.btnYellow{
+    background: rgba(226, 195, 36, 1);
+}
+
+@media screen and (max-width: 850px) {
+    .cardsSection{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .cardsSection{
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .colorButtons{
+        display: none;
+    }
+
+    .cardButtons{
+        justify-content: center;
+    }
+}
