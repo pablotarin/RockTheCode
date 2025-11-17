@@ -620,18 +620,6 @@ nav > div {
     align-self: center;
 }
 
-/* .ruedaSection > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    height: 100%;
-    padding: 0 120px 0 30px;
-    gap: 30px;
-    flex-shrink: 1;
-    min-width: 300px;
-} */
-
 .ruedaSection h4{
     padding-bottom: 20px;
     font-family: var(--ABeeZee, "serif");
@@ -719,4 +707,41 @@ nav > div {
     .ruedaSection{
         padding: 10px;
     }
+}
+
+
+/* *************************************************** */
+.footerBkg{
+    background-image: url("./src/img/fondoGrisFooter.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    padding: 40px 150px;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBkg > p{
+    padding: 0 100px;
+    font-family: var(--ABeeZee, "serif");
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.footerBkg > button{
+    background-color: white;
+    color: black;
+    height: 50px;
+    min-width: 200px;
+    border-radius: 60px;
+    border: 1px solid black;
+    padding: 14.5px 1px;
+}
+
+.footerBlk{
+    background-color: black;
+    color: white;
 }
