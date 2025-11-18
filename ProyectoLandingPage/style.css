@@ -711,7 +711,7 @@ nav > div {
 
 
 /* *************************************************** */
-.footerBkg{
+.footerGrey{
     background-image: url("./src/img/fondoGrisFooter.png");
     background-size: cover;
     background-position: center;
@@ -723,7 +723,7 @@ nav > div {
     align-items: center;
 }
 
-.footerBkg > p{
+.footerGrey > p{
     padding: 0 100px;
     font-family: var(--ABeeZee, "serif");
     font-weight: 400;
@@ -731,7 +731,7 @@ nav > div {
     font-size: 16px;
 }
 
-.footerBkg > button{
+.footerGrey > button{
     background-color: white;
     color: black;
     height: 50px;
@@ -741,7 +741,173 @@ nav > div {
     padding: 14.5px 1px;
 }
 
+@media screen and (max-width: 1025px){
+    .footerGrey{
+        flex-direction: column;
+        padding: 42px 0;
+        gap: 20px;
+    }
+
+    .footerGrey > p{
+        padding: 0 18px;
+        text-align: center;
+    }
+}
+
 .footerBlk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
+    padding: 100px 0;
+}
+
+.footerSubs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 890px;
+    padding: 26px 21px 100px;
+    width: 508px;
+    gap: 20px;
+}
+
+.footerSubs > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSubs > .firstDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSubs p{
+    font-family: var(--ABeeZee, "serif");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footerSubs .title{
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.footerSubs .subtitle{
+    font-size: 14px;
+}
+
+.footerSubs > form .emailDiv{
+    border-radius: 80px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footerSubs button{
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 80px;
+    padding: 14.5px 61px;
+    width: 144px;
+    height: 100%;
+    cursor: pointer;
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--ABeeZee, "serif");
+    font-weight: 591;
+}
+
+.footerSubs input[type="email"]{
+    background-color: black;
+    color: white;
+    border-radius: 80px;
+    border: 0;
+    font-family: var(--ABeeZee, "serif");
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    text-align: center;
+}
+
+.footerSubs input[type="email"]::placeholder{
+    color: white;
+}
+
+.footerSubs > form .checkboxDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25px 20px;
+    gap: 10px;
+    font-family: var(--ABeeZee, "serif");
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.footerSubs > form a{
+    color: white;
+    text-decoration: underline;
+}
+
+.footerSubs input[type="checkbox"]{
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius: 2.5px;
+}
+
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socialIcons img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.footerLists{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 26px 0 60px;
+    width: 100%;
+}
+
+.footerLists li{
+    list-style: none;
+    font-family: var(--ABeeZee, "serif");
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    padding: 8px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footerLists li:first-child{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 14px;
 }
