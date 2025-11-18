@@ -40,6 +40,7 @@ nav > ul {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 6px;
 }
 
 nav > ul > li{
@@ -49,14 +50,15 @@ nav > ul > li{
     align-items: center;
 }
 
-li > button{
+li > a{
     border: 0px;
-    padding: 18.5px 7.9px 15.5px;
+    padding: 18.5px /* 7.9px */ 15.5px;
     color: black;
     font-family: var(--ABeeZee, "serif");
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
 }
 
 nav button{
@@ -77,7 +79,7 @@ nav > div {
     align-items: center;
 }
 
-.controlsMargin > button:not(.menuBurguer){
+.controlsMargin > a{
     display: flex;
     height: 49px;
     justify-content: center;
@@ -101,7 +103,7 @@ nav > div {
     visibility: hidden;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 670px) {
     .menuBurguer {
         visibility: visible;
     }
@@ -229,6 +231,8 @@ nav > div {
     background-color: white;
     border: 0;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .cardButtons{
@@ -345,7 +349,7 @@ nav > div {
 @media screen and (max-width: 800px){
     .textoMedio{
         align-items: center;
-        padding: 20px;
+        padding: 40px 20px 10px;
     }
     .textoMedio h2{
         text-align: center;
@@ -394,15 +398,13 @@ nav > div {
     padding-bottom: 20px;
     font-family: var(--ABeeZee, "serif");
     font-weight: 400;
-    font-style: Regular;
     font-size: 50px;
     line-height: 50px;
-    letter-spacing: 0%;
     vertical-align: middle;
     margin-bottom: 10px;
 }
 
-.sectionMap button{
+.sectionMap a{
     padding: 21px 31px;
     background-color: white;
     color: black;
@@ -414,6 +416,7 @@ nav > div {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 550px) {
@@ -431,6 +434,7 @@ nav > div {
     .sectionMap h4{
         text-align: center;
         font-size: 36px;
+        margin-bottom: 20px;
     }
 }
 
@@ -673,13 +677,14 @@ nav > div {
         min-width: auto;
         justify-self: center;
         align-self: center;
-        margin-top: 20px;
         border-radius: 15px;
     }
 
     .ruedaSection > h4{
         text-align: center;
         padding: 0;
+        font-size: 32px;
+        font-family: var(--fontAbhaya, "serif");
     }
 
     .ruedaSection > div{
@@ -697,15 +702,11 @@ nav > div {
         justify-self: center;
         align-self: center;
     }
-
-    .ruedaSection h4{
-        font-size: 32px;
-    }
 }
 
 @media screen and (max-width: 350px){
     .ruedaSection{
-        padding: 10px;
+        padding: 30px 10px;
     }
 }
 
@@ -731,7 +732,7 @@ nav > div {
     font-size: 16px;
 }
 
-.footerGrey > button{
+.footerGrey > a{
     background-color: white;
     color: black;
     height: 50px;
@@ -739,6 +740,8 @@ nav > div {
     border-radius: 60px;
     border: 1px solid black;
     padding: 14.5px 1px;
+    text-align: center;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1025px){
@@ -771,8 +774,7 @@ nav > div {
     align-items: center;
     max-width: 890px;
     padding: 26px 21px 100px;
-    width: 508px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .footerSubs > form{
@@ -819,7 +821,7 @@ nav > div {
     border: 0;
     border-radius: 80px;
     padding: 14.5px 61px;
-    width: 144px;
+    max-width: 144px;
     height: 100%;
     cursor: pointer;
     justify-self: end;
@@ -832,13 +834,20 @@ nav > div {
     font-weight: 591;
 }
 
+@media screen and (max-width: 375px) {
+    .footerSubs button{
+        padding: 14.5px 20px;
+    }
+    
+}
+
 .footerSubs input[type="email"]{
     background-color: black;
     color: white;
     border-radius: 80px;
     border: 0;
     font-family: var(--ABeeZee, "serif");
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
     outline: none;
     text-align: center;
@@ -910,4 +919,59 @@ nav > div {
     color: white;
     font-size: 20px;
     margin-bottom: 14px;
+}
+
+@media screen and (max-width: 770px) {
+    .footerLists{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 36px;
+    }
+
+    .footerSubs > form .checkboxDiv{
+        padding: 30px 10px 20px;
+    }
+
+    .socialIcons img{
+        width: 13px;
+        height: 13px;
+    }
+
+    .footerSubs{
+        padding-bottom: 40px;
+    }
+}
+
+footer{
+    position: relative;
+}
+
+footer>a{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 12.5px 14.5px;
+    border-radius: 80px;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    footer>a{
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .footerBlk{
+        padding: 50px 0 0;
+    }
+
+    .footerLists{
+        padding: 0;
+        margin-bottom: 40px;
+    }
 }
